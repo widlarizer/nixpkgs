@@ -1,0 +1,15 @@
+diff --git a/src/gui/src/tclCmdInputWidget.h b/src/gui/src/tclCmdInputWidget.h
+index 86372b22c..ac8c962f0 100644
+--- a/src/gui/src/tclCmdInputWidget.h
++++ b/src/gui/src/tclCmdInputWidget.h
+@@ -47,6 +47,10 @@
+ 
+ #include "cmdInputWidget.h"
+ #include "tclCmdHighlighter.h"
++#include <tcl.h>
++#ifndef TCL_SIZE_MAX
++typedef int Tcl_Size;
++#endif
+ #include "tclSwig.h"  // generated header
+ 
+ namespace gui {
